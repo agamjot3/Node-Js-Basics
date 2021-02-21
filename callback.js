@@ -1,11 +1,11 @@
-function getMessage(){
+function getMessage(msg, callback){
     setTimeout(()=>{
-        console.log('Get Message Function')
+        console.log(msg);
+        callback();
     },1000)
 }
 function putMessage(){
-    console.log('Put Message Function')
+    console.log('Message 2')
 };
 
-getMessage();
-putMessage();
+getMessage("Message 1", putMessage);
