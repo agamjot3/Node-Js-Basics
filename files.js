@@ -28,9 +28,9 @@ const content = [{
 
 fs.writeFileSync('test.json', JSON.stringify(content));
 
-const a = "Node App for Backend";
+const a = "For Backend";
 
-fs.writeFile('text.txt',a,err=>{
+fs.writeFile('test.txt',a,{ flag:'w+'},err=>{
     if(err){
         console.log(err);
         return
