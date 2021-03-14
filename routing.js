@@ -22,4 +22,4 @@ http.createServer((req,res)=>{
       
     }
 
-}).listen(8000);
+}).listen(process.env.PORT || 8000);
